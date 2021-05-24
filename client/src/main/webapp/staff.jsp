@@ -1,3 +1,7 @@
+<%@ page language="java" contentType="text/html; charset=UTF-8" pageEncoding="UTF-8" %>
+<%
+    session.setAttribute("lang", "zh-cn");
+%>
 <!DOCTYPE html>
 <html lang="zh_cn">
 <head>
@@ -8,64 +12,9 @@
     <link rel="stylesheet" href="css/sjz.css">
 </head>
 <body>
-<div class="header-nav">
-    <div class="container">
-        <div class="top">
-            <h3 class="logo pull-left">公司名称或公司LOGO</h3>
-            <ul class="nav-list pull-right">
-                <li><a href="index.html">中工概况 <span class="sr-only">(current)</span></a></li>
-                <li><a href="news.html">新闻聚焦</a>
-                    <div class="subnav">
-                        <ul class="subnav-ul">
-                            <li class="subnav-tag"><a href="#"><img src="img/news1.png"> </a></li>
-                            <li class="subnav-tag"><a href="#"><img src="img/news2.png"> </a></li>
-                            <li class="subnav-tag"><a href="#"><img src="img/news3.png"> </a></li>
-                            <li class="subnav-tag"><a href="#"><img src="img/news4.png"> </a></li>
-                        </ul>
-                    </div>
-                </li>
-                <li><a href="about.html">刊物风采</a>
-                    <div class="subnav">
-                        <ul class="subnav-ul">
-                            <li class="subnav-tag"><a href="#"><img src="img/about1.png"> </a></li>
-                            <li class="subnav-tag"><a href="#"><img src="img/about2.png"> </a></li>
-                            <li class="subnav-tag"><a href="#"><img src="img/about3.png"> </a></li>
-                            <li class="subnav-tag"><a href="#"><img src="img/about4.png"> </a></li>
-                        </ul>
-                    </div>
-                </li>
-                <li class="active"><a href="business.html">校园文化</a>
-                    <div class="subnav">
-                        <ul class="subnav-ul">
-                            <li class="subnav-tag"><a href="#"><img src="img/business1.png"> </a></li>
-                            <li class="subnav-tag"><a href="#"><img src="img/business2.png"> </a></li>
-                            <li class="subnav-tag"><a href="#"><img src="img/business3.png"> </a></li>
-                        </ul>
-                    </div>
-                </li>
-                <li><a href="human.html">教育教学</a>
-                    <div class="subnav">
-                        <ul class="subnav-ul">
-                            <li class="subnav-tag"><a href="#"><img src="img/human1.png"> </a></li>
-                            <li class="subnav-tag"><a href="#"><img src="img/human2.png"> </a></li>
-                            <li class="subnav-tag"><a href="#"><img src="img/human3.png"> </a></li>
-                        </ul>
-                    </div>
-                </li>
-                <li><a href="statement.html">联系我们</a>
-                    <div class="subnav">
-                        <ul class="subnav-ul">
-                            <li class="subnav-tag"><a href="#"><img src="img/contact1.png"> </a></li>
-                            <li class="subnav-tag"><a href="#"><img src="img/contact2.png"> </a></li>
-                            <li class="subnav-tag"><a href="#"><img src="img/contact3.png"> </a></li>
-                        </ul>
-                    </div>
-                </li>
-            </ul>
-            <div class="clearfix"></div>
-        </div>
-    </div>
-</div>
+
+<jsp:include page="header.jsp"/>
+
 <div class="news-banner">
     <img src="img/news_banner.png">
 </div>
@@ -73,9 +22,9 @@
     <div class="news-left pull-left">
         <div class="this-news">企业文化 | CULTURE</div>
         <ul class="news-menu">
-            <li><a href="business.html"><span class="glyphicon glyphicon-play"></span>公司形象</a></li>
-            <li><a href="business.html"><span class="glyphicon glyphicon-play"></span>集团理念</a></li>
-            <li class="active"><a href="staff.html"><span class="glyphicon glyphicon-play"></span>员工风采</a></li>
+            <li><a href="business.jsp"><span class="glyphicon glyphicon-play"></span>公司形象</a></li>
+            <li><a href="business.jsp"><span class="glyphicon glyphicon-play"></span>集团理念</a></li>
+            <li class="active"><a href="staff.jsp"><span class="glyphicon glyphicon-play"></span>员工风采</a></li>
         </ul>
     </div>
     <div class="news-right pull-right">
@@ -83,16 +32,16 @@
             <div class="guild-main pull-left">员工风采</div>
             <div class="guild-sub pull-right text-right">
                 <span class="glyphicon glyphicon-play"></span>
-                <a href="index.html">首页</a>
+                <a href="index.jsp">首页</a>
                 <span class="glyphicon glyphicon-play"></span>
-                <a href="business.html">企业文化</a>
+                <a href="business.jsp">企业文化</a>
                 <span class="glyphicon glyphicon-play"></span>
-                <a href="staff.html">员工风采</a>
+                <a href="staff.jsp">员工风采</a>
             </div>
         </div>
         <div class="main">
             <div class="branch-list">
-                <a href="branchDetail.html">
+                <a href="branchDetail.jsp">
                     <div class="branch-log pull-left"><img src="img/yg.png"> </div>
                     <div class="branch pull-left">
                         <div class="branch-name">姓名</div>
@@ -103,7 +52,7 @@
                 </a>
             </div>
             <div class="branch-list">
-                <a href="branchDetail.html">
+                <a href="branchDetail.jsp">
                     <div class="branch-log pull-left"><img src="img/yg.png"> </div>
                     <div class="branch pull-left">
                         <div class="branch-name">姓名</div>
@@ -114,7 +63,7 @@
                 </a>
             </div>
             <div class="branch-list">
-                <a href="branchDetail.html">
+                <a href="branchDetail.jsp">
                     <div class="branch-log pull-left"><img src="img/yg.png"> </div>
                     <div class="branch pull-left">
                         <div class="branch-name">姓名</div>
@@ -125,7 +74,7 @@
                 </a>
             </div>
             <div class="branch-list">
-                <a href="branchDetail.html">
+                <a href="branchDetail.jsp">
                     <div class="branch-log pull-left"><img src="img/yg.png"> </div>
                     <div class="branch pull-left">
                         <div class="branch-name">姓名</div>
