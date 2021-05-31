@@ -51,7 +51,7 @@ public class User {
      */
     private String tel;
     /**
-     * 角色
+     * 角色(0 普通用户 1 管理员用户)
      */
     private Integer role;
     /**
@@ -59,7 +59,7 @@ public class User {
      */
     private Date createDate;
     /**
-     * 状态
+     * 状态角色(0 删除 1 有效)
      */
     private Integer status;
     /**

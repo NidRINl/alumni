@@ -1,49 +1,74 @@
-<%@ page language="java" contentType="text/html; charset=UTF-8" pageEncoding="UTF-8" %>
-<%
-    session.setAttribute("lang", "zh-cn");
-%>
 <!DOCTYPE html>
 <html lang="zh_cn">
 <head>
     <meta charset="UTF-8">
     <title>首页client</title>
-    <!-- 页面基本设置禁止随意更改 -->
-    <!-- 基础CSS类库可随意更改 -->
-    <link rel="stylesheet" type="text/css" href="css/less.css">
-    <link rel="stylesheet" type="text/css" href="css/basic.css">
-
     <link rel="stylesheet" href="css/bootstrap.min.css">
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/slt.css">
 </head>
 <body>
-
-<jsp:include page="header.jsp"/>
-
-<div class="login-topBg">
-    <div class="login-topBg1">
-        <div class="login-topStyle">
-            <!--在点击注册时出现样式login-topStyle3登录框，而login-topStyle2则消失-->
-            <div class="login-topStyle3" id="loginStyle" style="margin-top: 75px;">
-                <h3>用户平台登录</h3>
-                <!--输入错误提示信息，默认是隐藏的，把display:none，变成block可看到-->
-                <div class="error-information" style="display:none;">您输入的密码不正确，请重新输入</div>
-                <div class="ui-form-item loginUsername">
-                    <input type="username" placeholder="用户名/手机号/密码">
-                </div>
-                <div class="ui-form-item loginPassword">
-                    <input type="password" placeholder="请输入密码">
-                </div>
-                <div class="login_reme">
-                    <input type="checkbox">
-                    <a class="reme1">记住账号</a> <a class="reme2" href="password.jsp">忘记密码?</a></div>
-                <span class="error_xinxi" style="display:none;">您输入的密码不正确，请重新输入</span> <a class="btnStyle btn-register"
-                                                                                          href="register.jsp"> 立即登录</a>
-            </div>
+<div class="header-nav">
+    <div class="container">
+        <div class="top">
+            <h3 class="logo pull-left">公司名称或公司LOGO</h3>
+            <ul class="nav-list pull-right">
+                <li class="active"><a href="index.html">中工概况 <span class="sr-only">(current)</span></a></li>
+                <li><a href="news.html">新闻聚焦</a>
+                    <div class="subnav">
+                        <ul class="subnav-ul">
+                            <li class="subnav-tag"><a href="#"><img src="img/news1.png"> </a></li>
+                            <li class="subnav-tag"><a href="#"><img src="img/news2.png"> </a></li>
+                            <li class="subnav-tag"><a href="#"><img src="img/news3.png"> </a></li>
+                            <li class="subnav-tag"><a href="#"><img src="img/news4.png"> </a></li>
+                        </ul>
+                    </div>
+                </li>
+                <li><a href="about.html">刊物风采</a>
+                    <div class="subnav">
+                        <ul class="subnav-ul">
+                            <li class="subnav-tag"><a href="#"><img src="img/about1.png"> </a></li>
+                            <li class="subnav-tag"><a href="#"><img src="img/about2.png"> </a></li>
+                            <li class="subnav-tag"><a href="#"><img src="img/about3.png"> </a></li>
+                            <li class="subnav-tag"><a href="#"><img src="img/about4.png"> </a></li>
+                        </ul>
+                    </div>
+                </li>
+                <li><a href="business.html">校园文化</a>
+                    <div class="subnav">
+                        <ul class="subnav-ul">
+                            <li class="subnav-tag"><a href="#"><img src="img/business1.png"> </a></li>
+                            <li class="subnav-tag"><a href="#"><img src="img/business2.png"> </a></li>
+                            <li class="subnav-tag"><a href="#"><img src="img/business3.png"> </a></li>
+                        </ul>
+                    </div>
+                </li>
+                <li><a href="human.html">教育教学</a>
+                    <div class="subnav">
+                        <ul class="subnav-ul">
+                            <li class="subnav-tag"><a href="#"><img src="img/human1.png"> </a></li>
+                            <li class="subnav-tag"><a href="#"><img src="img/human2.png"> </a></li>
+                            <li class="subnav-tag"><a href="#"><img src="img/human3.png"> </a></li>
+                        </ul>
+                    </div>
+                </li>
+                <li><a href="statement.html">联系我们</a>
+                    <div class="subnav">
+                        <ul class="subnav-ul">
+                            <li class="subnav-tag"><a href="#"><img src="img/contact1.png"> </a></li>
+                            <li class="subnav-tag"><a href="#"><img src="img/contact2.png"> </a></li>
+                            <li class="subnav-tag"><a href="#"><img src="img/contact3.png"> </a></li>
+                        </ul>
+                    </div>
+                </li>
+            </ul>
+            <div class="clearfix"></div>
         </div>
     </div>
 </div>
-
+<div class="index-banner">
+    <img src="img/banner.jpg">
+</div>
 <div>
     <div class="index-tit">
         <div class="index-tit-text">
@@ -79,7 +104,7 @@
                 <div class="content-title"><img src="img/content1.png"></div>
                 <div class="content-left-list">
                     <div class="left-list">
-                        <a href="newsDetail.jsp">
+                        <a href="newsDetail.html">
                             <div class="list-data pull-left">
                                 <div class="data">27</div>
                                 <span>AUG</span>
@@ -90,7 +115,7 @@
                         <div class="clearfix"></div>
                     </div>
                     <div class="left-list">
-                        <a href="newsDetail.jsp">
+                        <a href="newsDetail.html">
                             <div class="list-data pull-left">
                                 <div class="data">27</div>
                                 <span>AUG</span>
@@ -101,7 +126,7 @@
                         <div class="clearfix"></div>
                     </div>
                     <div class="left-list">
-                        <a href="newsDetail.jsp">
+                        <a href="newsDetail.html">
                             <div class="list-data pull-left">
                                 <div class="data">27</div>
                                 <span>AUG</span>
@@ -116,7 +141,7 @@
             <div class="content-right pull-right">
                 <div class="content-title"><img src="img/content2.png"></div>
                 <div class="content-right-hot">
-                    <a href="newsDetail.jsp">
+                    <a href="newsDetail.html">
                         <div class="hot-left pull-left">
                             <div class="right-data">AUG,23,2016</div>
                             <div class="right-tit">开源移动分析应用发布了……</div>
@@ -129,7 +154,7 @@
                     <div class="clearfix"></div>
                 </div>
                 <div class="left-list">
-                    <a href="newsDetail.jsp">
+                    <a href="newsDetail.html">
                         <div class="list-data pull-left">
                             <div class="data">27</div>
                             <span>AUG</span>
@@ -193,11 +218,11 @@
 
         //创建节点
         //图片列表节点
-        for(var j=0; j<images_count+1; j++){
+        for(var j=0;j<images_count+1;j++){
             $('.slt-banner ul').append('<li></li>')
         }
         //轮播圆点按钮节点
-        for(var j=0; j<images_count; j++){
+        for(var j=0;j<images_count;j++){
             if(j==0){
                 $('.slt-banner ol').append('<li class="current"></li>')
             }else{
@@ -241,7 +266,6 @@
         });
         //自动播放
         var timer = null;
-
         function prevPlay(){
             num--;
             if(num<0){
@@ -259,7 +283,6 @@
 
             }
         }
-
         function nextPlay(){
             num++;
             if(num>images_count){
@@ -280,7 +303,6 @@
 
             }
         }
-
         timer = setInterval(nextPlay,2000);
         //鼠标经过slt-banner，停止定时器,离开则继续播放
         $('.slt-banner').mouseenter(function(){
