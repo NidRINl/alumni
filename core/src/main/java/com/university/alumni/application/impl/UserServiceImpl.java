@@ -7,9 +7,6 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 
-import javax.persistence.criteria.CriteriaBuilder;
-import java.util.List;
-
 /**
  * Created by wm on 2017/1/19.
  */
@@ -24,7 +21,6 @@ public class UserServiceImpl implements UserService{
     public User addUser(String name ,
                         String department,
                         Integer age,
-                        Integer sex,
                         String classes,
                         String studentId,
                         String qq,
@@ -33,7 +29,6 @@ public class UserServiceImpl implements UserService{
         User user=new User();
         user.setName(name);
         user.setAge(age);
-        user.setSex(sex);
         user.setDepartment(department);
         user.setClasses(classes);
         user.setStudentId(studentId);
@@ -53,33 +48,5 @@ public class UserServiceImpl implements UserService{
             return null;
         }
 
-    }
-
-    @Override
-    public List<User> getUserList(Integer role) {
-
-        return userDao.getUserList(role);
-    }
-
-    @Override
-    public List<User> getAdminList(Integer role) {
-        return userDao.getAdminList(role);
-    }
-
-    @Override
-    public User modifyUser(Integer id, String name, String department, Integer age, Integer sex, String classes, String studentId, String qq, String email, String tel) {
-
-
-        User user=userDao.findById(id);
-        user.setName(name);
-        user.setAge(age);
-        user.setSex(sex);
-        user.setDepartment(department);
-        user.setClasses(classes);
-        user.setStudentId(studentId);
-        user.setEmail(email);
-        user.setQq(qq);
-        user.setTel(tel);
-        return userDao.modifyUser(user);
     }
 }

@@ -90,27 +90,7 @@
 
 </div>
 
-<div class="footer">
-    <div class="container">
-        <div class="foot-left pull-left">
-            <div class="company">
-                <a href="#">联系我们</a>|
-                <a href="#">网站地图</a>|
-                <a href="#">RSS订阅</a>|
-                <a href="#">常见问题</a>|
-                <a href="#">互动交流</a>|
-                <a href="#">隐私说明</a>|
-                <a href="#">法律声明</a>
-            </div>
-            <div class="company">公司名称公司名称公司名称 版权所有 陕备案-0213456号</div>
-            <div class="company">公司地址：公司地址公司地址公司地址公司地址 联系电话：034-34564598</div>
-        </div>
-        <div class="foot-right pull-left">
-            公司名称公司名称公司名称
-        </div>
-        <div class="clearfix"></div>
-    </div>
-</div>
+<jsp:include page="footer.jsp"/>
 
 <script src="js/jquery-1.11.0.min.js"></script>
 <script src="js/bootstrap.min.js"></script>

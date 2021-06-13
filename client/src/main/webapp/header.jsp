@@ -6,11 +6,25 @@
   To change this template use File | Settings | File Templates.
 --%>
 <%@ page language="java" pageEncoding="UTF-8" %>
+<link rel="stylesheet" type="text/css" href="css/basic.css">
+
+<div class="header_top">
+    <div class="header_top_l">
+        <a href="#" target="_new">河南工学院</a>
+        <a href="#" target="_new">论坛</a>
+        <a href="#" target="_new">校友捐赠</a>
+    </div>
+    <div class="header_top_r">
+        <a href="login.jsp" target="_new">登录</a>
+        <a href="register.jsp" target="_new">注册</a>
+    </div>
+</div>
+
 
 <div class="header-nav">
     <div class="container">
         <div class="top">
-            <a href="index.jsp"><h2 class="logo pull-left">河南工学院校友网</h2></a>
+            <a href="index.jsp"><h1 class="logo pull-left">河南工学院校友网</h1></a>
             <ul class="nav-list pull-right">
                 <li class="active"><a href="index.jsp">学校概况 <span class="sr-only">(current)</span></a></li>
                 <li><a href="news.jsp">新闻聚焦</a>
@@ -65,3 +79,4 @@
         </div>
     </div>
 </div>
+
